@@ -1,5 +1,4 @@
-import React from "react";
-import navLinks from "../constants/"; // Or '../constants/index.js' but, since it is index.js you don't need to specify it. It will automatically look for index.js file in the constants folder
+import navLinks from '../constants/' // Or '../constants/index.js' but, since it is index.js you don't need to specify it. It will automatically look for index.js file in the constants folder
 
 const Navbar = () => {
   return (
