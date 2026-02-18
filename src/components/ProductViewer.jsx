@@ -6,10 +6,15 @@ import { Box } from "@react-three/drei";
 import { OrbitControls } from "@react-three/drei";
 import MacBookmodel14 from "./models/Macbook-14";
 import MacBookmodel16 from "./models/Macbook-16";
+import StudioLights from "./three/StudioLights";
+import ModelSwitcher from "./three/ModelSwitcher";
+import { useMediaQuery } from "react-responsive";
 
 const ProductViewer = () => {
 
   const { color, scale, setColor, setScale } = useMacBookStore(); // We don't have to manage these states here as we're managing them in the store, but we can still access them if needed
+
+  const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 
   return (
     <section id="product-viewer">
@@ -57,9 +62,8 @@ const ProductViewer = () => {
         id="canvas"
         camera={{ position: [0, 1, 5], fov: 50, near: 0.1, far: 100 }}
       >
-        <ambientLight intensity={10} />
-        <MacBookmodel14 scale={0.06} position={[0, 0, 0]} />
-        <OrbitControls enableZoom={false} />
+        <StudioLights />
+        <ModelSwitcher scale={isMobile ? scale - 0.03 : scale} isMobile={isMobile}/>
       </Canvas>
     </section>
   );
