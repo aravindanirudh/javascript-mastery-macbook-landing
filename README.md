@@ -122,6 +122,7 @@ Assets and snippets used in the project can be found in the **[video kit](https:
 ## <a id="notes">🗒️ Notes</a>
 - In /public/videos/ folder, mp4 and webm versions of same files exist. mp4 is to be deleted later if unused
 - Zustand (similar to Redux) is used for global state management
+- clsx is a tiny (239B) utility for constructing className strings conditionally
 
 ## <a id="contact">📧 Contact</a>
 
