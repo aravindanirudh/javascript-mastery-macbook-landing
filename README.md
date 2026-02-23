@@ -123,6 +123,10 @@ Assets and snippets used in the project can be found in the **[video kit](https:
 - In /public/videos/ folder, mp4 and webm versions of same files exist. mp4 is to be deleted later if unused
 - Zustand (similar to Redux) is used for global state management
 - clsx is a tiny (239B) utility for constructing className strings conditionally
+- Unfortunately, this course has to be stopped because:
+    - I learned most of the new/important things
+    - This is not what I wanted
+    - This is not a beginner-friendly course
 
 ## <a id="contact">📧 Contact</a>
 
