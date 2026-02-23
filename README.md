@@ -120,6 +120,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/mbook-kit)**.
 
 ## <a id="notes">🗒️ Notes</a>
+- Check resourcesFromJSM folder for cheatsheets for TailwindCSS, ThreeJS, GSAP. It also contains final version of this website as well as assets
 - In /public/videos/ folder, mp4 and webm versions of same files exist. mp4 is to be deleted later if unused
 - Zustand (similar to Redux) is used for global state management
 - clsx is a tiny (239B) utility for constructing className strings conditionally
